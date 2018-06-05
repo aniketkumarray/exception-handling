@@ -1,0 +1,39 @@
+VALUE ERROR:
+a="hello world"
+c=int(a)
+print(a)
+
+
+handled:
+a="hello world"
+try:
+    c=int(a)
+except ValueError:
+    print('this action is not possible')
+print(a)
+this action is not possible
+hello world
+
+
+INDEX Error
+
+l=[1,2,3]
+try:
+    print(l[3])
+
+except IndexError:
+    print("index is out of bound")
+output:
+index is out of bound
+
+
+
+
+IMPORT ERROR
+try:
+    from _ray import *
+except ImportError:
+    print('import error')
+output:
+
+import error
